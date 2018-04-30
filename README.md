@@ -1,2 +1,2 @@
 # Triceptional0.5
-Port of a failed Android Fitness app to a Google Chrome Extension 
+Simple google chrome extension that calculates BMI, ideal weight range, BMR, TDE, and macronutrients for maintenance/cutting/bulking. 
