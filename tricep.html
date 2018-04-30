@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Triceptional</title>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body translate="no" >
+
+  <div class="container" id="firstcard">
+  
+  <h2>Triceptional<small>Calculator</small></h2>
+      
+    <div class="group">      
+      <input type="number" id="age" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Age</label>
+    </div>
+      
+    <div class="group">      
+      <input type="number" id="weightlb" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Weight (lbs)</label>
+    </div>
+
+    <div class="group">      
+      <input type="number" id="height" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Height (in inches)</label>
+    </div>
+
+     <div class="group">      
+      <input type="number" id="activity" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Activity Level <span style="font-size: 10px;">(0 is sedentary - 4 is extreme)</span></label>
+    </div>
+
+    <div class="group">      
+      <input type="number" id="sex" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Sex (0 - Female, 1 - Male)</label>
+    </div>
+
+<button id="submit">Submit</button>
+
+  
+</div>
+
+
+  <div class="container" id="secondcard" style="display: none;">
+      <h2>Results</h2>
+
+      <p>Basal Metabolic Rate: <div id="BMR"></div><br/> 
+        Total Daily Expenditure:<div id="TDE"></div><br/></p>
+
+        <br/>
+          <table>
+            <tr>
+              <th>Macros: </th>
+              <th>Protein</th>
+              <th>Fat</th>
+              <th>Carbs</th>
+            </tr>
+            <tr>
+              <td>To maintain:</td>
+              <td id="mprotein"></td>
+              <td id="mfat"></td>
+              <td id="mcarb"></td>
+            </tr>
+            <tr>
+              <td>To cut:</td>
+              <td id="cprotein"></td>
+              <td id="cfat"></td>
+              <td id="ccarb"></td>
+            </tr>
+             <tr>
+              <td>To bulk:</td>
+              <td id="bprotein"></td>
+              <td id="bfat"></td>
+              <td id="bcarb"></td>
+            </tr>
+          </table>
+        </p>
+
+        <p>BMI: <br/>
+          (Healthy BMI is in range 18.5 - 24.9)<br/> 
+          <!--lower bound is determined by hamwi formula and upper bound is determined by the miller formula--> 
+          BMI: <span id="BMI"></span> <br/> 
+          Weight Range: <span id="low"></span>-<span id="high"></span><br/>
+        </p> 
+
+        <button id="backbutton">Go Back</button>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
+ 

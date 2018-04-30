@@ -1,0 +1,10 @@
+  {
+    "name": "triceptional",
+    "version": "1.0",
+    "description": "quick fitness calculator",
+    "browser_action": {
+      "default_popup": "tricep.html",
+      "default_icon": "tab.png"
+    },
+    "manifest_version": 2
+  }
